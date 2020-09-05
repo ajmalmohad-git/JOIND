@@ -85,7 +85,7 @@ function Login(props) {
             </div>
             :
             <div className="form2" onChange={(e)=>{handleChange(e)}}>
-                <input className="name" name="name" type="text" placeholder="Select a username"/>
+                <input className="name" name="name" type="text" placeholder="Create a username"/>
                 <input className="gmail" name="gmail" type="email" placeholder="Gmail"/>
                 <input className="password" name="password" type="password" placeholder="Password"/>
                 <button className="btn" onClick={()=>{handleClick(2)}}>Sign up</button>
