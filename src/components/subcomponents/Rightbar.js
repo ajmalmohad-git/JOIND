@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../../styles/Rightbar.scss";
 import AddIcon from "@material-ui/icons/Add";
-import { mytodos } from "./../../data/data";
 
 function Rightbar() {
   let [todo, setTodo] = useState({

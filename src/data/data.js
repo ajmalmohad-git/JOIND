@@ -1,4 +1,3 @@
-
 export const mytodos = [
   {
     title: "Clean home",
@@ -90,4 +89,29 @@ export const mytodos = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
     completed: false,
   },
+];
+
+export const chatmembers = [
+  "Adam",
+  "Alex",
+  "Aaron",
+  "Ben",
+  "Carl",
+  "Dan",
+  "David",
+  "Edward",
+  "Fred",
+  "Frank",
+  "George",
+  "Hal",
+  "Hank",
+  "Ike",
+  "John",
+  "Jack",
+  "Joe",
+  "Larry",
+  "Monte",
+  "Matthew",
+  "Mark",
+  "Nathan",
 ];
