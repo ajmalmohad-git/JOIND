@@ -1,0 +1,48 @@
+@import 'config';
+@import 'utilities';
+
+.Welcome {
+    @include onepage;
+    background: $bg-col;
+
+    .logo {
+        height: 10vh;
+        margin-top: 15vh;
+        opacity: 0.9;
+    }
+
+    .btn-cont {
+        @include flex-col;
+        margin:30vh auto;
+        width:200px;
+        
+
+        .btn {
+            @include btn-m;
+            background: $pri-col;
+            color: $bg-col;
+            transition: 0.3s ease-out;
+
+            &:hover {
+                background: $sec-col;
+                transition: 0.3s ease-in;
+            }
+        }
+
+        p {
+            color: grey;
+            margin:10px 0;
+        }
+    }
+}
+
+@media(max-width:420px)
+{
+    .Welcome
+    {
+        .logo
+        {
+            height:8vh;
+        }
+    }
+}

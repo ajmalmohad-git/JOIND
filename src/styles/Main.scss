@@ -1,0 +1,12 @@
+@import 'config';
+@import 'utilities';
+
+.Main{
+    overflow-y: scroll;
+    @include no-scrollbar;
+    z-index:999;
+}
+
+.Main::-webkit-scrollbar{
+    display: none;
+}

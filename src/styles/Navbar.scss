@@ -1,0 +1,21 @@
+@import 'config';
+@import 'utilities';
+
+.Navbar
+{
+    min-height:60px;
+    @include element;
+    @include flex-row;
+    .icon
+    {
+        font-size:50px;
+        color:$acc-col1;
+        transition:0.2s ease-out;
+        cursor: pointer;
+        &:hover
+        {
+            color:$pri-col;
+            transition:0.2s ease-in;
+        }
+    }
+}

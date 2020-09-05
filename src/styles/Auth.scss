@@ -1,0 +1,60 @@
+@import 'config';
+@import 'utilities';
+
+.Auth {
+    @include onepage;
+    background: $bg-col;
+
+    .heading {
+        margin-top: 10vh;
+        font-size: 10vh;
+        color: $pri-col;
+    }
+
+    .form1 {
+        @include flex-col;
+        width: 30%;
+        min-width: 350px;
+        margin-top: 20vh;
+
+        .username,
+        .password {
+            @include inputbox;
+        }
+
+        .btn {
+            @include btn-s;
+            margin: 8vh auto;
+            background: $pri-col;
+            color: $bg-col;
+            transition: 0.3s ease-out;
+
+            &:hover {
+                background: $sec-col;
+                transition: 0.3s ease-in;
+            }
+        }
+    }
+
+    .form2 {
+        @extend .form1;
+        margin-top: 12vh;
+
+        .name,
+        .gmail {
+            @include inputbox;
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .Auth {
+        .heading
+        {
+            font-size:9vh;
+        }
+        .form1 {
+            min-width: 90%;
+        }
+    }
+}

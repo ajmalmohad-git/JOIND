@@ -1,0 +1,67 @@
+@mixin onepage {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin btn-m {
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@mixin btn-s {
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@mixin inputbox {
+    margin: 3vh;
+    padding: 1.8vh;
+    border-radius: 12px;
+    border: none;
+    background:$acc-col2;
+    border:1px solid $acc-col1;
+}
+
+@mixin element 
+{
+    height:calc(100% - 30px);
+    width:calc(100% - 30px);
+    border:1px solid $acc-col1;
+    border-radius:$border-rad;
+    margin:15px;
+    background:whitesmoke;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+}
+@mixin no-scrollbar
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

@@ -1,0 +1,85 @@
+@import 'config';
+@import 'utilities';
+
+.Leftbar {
+    @include element;
+    min-height:540px;
+    min-width:250px;
+
+    .user {
+        height:35%;
+        min-height:180px;
+        border-radius:$border-rad;
+        background:rgba(39,149,139,0.55);
+        .logo {
+            height: 4vh;
+            min-height:20px;
+            margin-top:10%;
+        }
+        .avatar
+        {
+            height:10vh;
+            min-height:50px;
+            min-width:50px;
+            width: 10vh;
+            object-fit: cover;
+            margin: 25px auto 10px auto;
+            background: darken($color: $acc-col1, $amount: 30);
+        }
+        p
+        {
+            color:darken($color: $acc-col1, $amount: 30);
+            font-size:20px;
+        }
+    }
+
+    .bio
+    { 
+        @include element;
+        height:20%;
+        min-height:110px;
+        border-radius:$border-rad;
+        text-align: left;
+        padding:10px;
+        padding-top:1vh;
+        background: lighten($color: $acc-col1, $amount: 10);
+        p
+        {
+            padding-top:1vh;
+            font-size:14px;
+            color:darken($color: $acc-col1, $amount: 30);
+        }
+    }
+
+    .mytodo
+    {
+        @include element;
+        @include no-scrollbar;
+        height:36vh;
+        min-height:180px;
+        padding:10px;
+        padding-top:1vh;
+        background: lighten($color: $acc-col1, $amount: 10);
+        overflow: scroll;
+        .todo 
+        {
+            display: flex;
+            padding:5px;
+            input[type=checkbox]
+            {
+                cursor: pointer;
+            }
+            p 
+            {
+                margin-left:8px;
+                font-size:14px;
+                color:darken($color: $acc-col1, $amount: 30);
+            }
+        }
+    }
+    .mytodo::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+}

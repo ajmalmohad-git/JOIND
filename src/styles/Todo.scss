@@ -1,0 +1,65 @@
+@import 'config';
+@import 'utilities';
+
+.Todo {
+    @include element;
+    height: 20vh;
+    min-width:300px;
+    min-height:130px;
+    padding: 10px 20px;
+    background: rgba($color: $sec-col, $alpha: 0.3);
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        input[type=checkbox] {
+            -ms-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 24px;
+            color:darken($color: $sec-col, $amount: 20);
+        }
+    }
+
+    p {
+        text-align: left;
+        font-size: 14px;
+        color:darken($color: $acc-col1, $amount: 20);
+        height:40%;
+        overflow: scroll;
+        @include no-scrollbar;
+    }
+    p::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .lcu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icons {
+            margin: 0 6px 0 0;
+            color:darken($color: $acc-col1, $amount: 30);
+            cursor: pointer;
+        }
+        .avatar
+        {
+            height:40px;
+            width: 40px;
+            background:$acc-col1;
+            cursor: pointer;
+        }
+    }
+}
+
+
