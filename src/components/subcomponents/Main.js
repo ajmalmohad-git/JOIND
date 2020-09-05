@@ -4,7 +4,7 @@ import Todo from './Todo';
 import {mytodos} from './../../data/data';
 
 function Main() {
-    let randomTodos = mytodos.map((todo)=><Todo title={todo.title} completed={todo.completed} description={todo.description}/>);
+    let randomTodos = mytodos.map((todo,i)=><Todo key={i} title={todo.title} completed={todo.completed} description={todo.description}/>);
     return (
         <div className="Main">
             {randomTodos}

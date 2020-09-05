@@ -70,9 +70,18 @@
         .appbar
         {
             display:block;
+            position: relative;
+            top:0;
+            width:100%;
         }
         .leftbar {
             display: none;
+        }
+        .navbar
+        {
+            position: absolute;
+            bottom:0;
+            width:100%;
         }
     }
 }

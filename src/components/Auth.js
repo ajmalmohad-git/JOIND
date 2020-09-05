@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 
 function Login(props) {
     
-    let [logged,setLogged] = useState(false); //////////////////
+    let [logged,setLogged] = useState(false); 
     let loginpage = props.login;
     let login = {
         username:'',

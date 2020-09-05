@@ -43,6 +43,12 @@
         padding:10px;
         padding-top:1vh;
         background: lighten($color: $acc-col1, $amount: 10);
+        .icon
+        {
+            align-self: auto;
+            color:$acc-col1;
+            cursor:pointer;
+        }
         p
         {
             padding-top:1vh;

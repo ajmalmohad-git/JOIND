@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../styles/Leftbar.scss";
 import Avatar from '@material-ui/core/Avatar/Avatar'
+import EditIcon from '@material-ui/icons/EditOutlined'
 import {mytodos} from './../../data/data';
 
 function Leftbar() {
@@ -21,7 +22,7 @@ function Leftbar() {
             </div>
 
             <div className="bio">
-                <h3>My Bio</h3>
+                <h3>My Bio <EditIcon className="icon"/></h3>
                 <p>Lorem ipsum dolor sit amet, consect
                  adipiscing elit, sed do eiusmod tem
                  Lorem ipsum dolor sit amet.
