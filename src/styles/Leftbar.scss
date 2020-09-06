@@ -45,6 +45,7 @@
         }
         p
         {
+            height:50px;
             overflow: scroll;
             @include no-scrollbar;
             padding-top:1vh;
