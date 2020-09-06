@@ -1,10 +1,11 @@
 import React from 'react'
 import "../../styles/Profile.scss";
+import Leftbar from './Leftbar'
 
 function Profile() {
     return (
         <div className="Profile">
-            Profile
+            <Leftbar/>
         </div>
     )
 }

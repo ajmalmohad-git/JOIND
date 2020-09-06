@@ -8,6 +8,7 @@ import Appbar from "./subcomponents/Appbar";
 import Groups from "./subcomponents/Groups";
 import Profile from "./subcomponents/Profile";
 import AddTodo from "./subcomponents/AddTodo";
+import Filler from "./subcomponents/Filler";
 
 
 function Home() {
@@ -22,7 +23,7 @@ function Home() {
     switch (page) {
       case 1: return <Main />;
       case 2: return <Groups/>;
-      case 3: return <AddTodo />;
+      case 3: return <AddTodo/>;
       case 4: return <Profile/>;
       default: return <Main />;
     }
@@ -34,10 +35,10 @@ function Home() {
         <Appbar/>
       </div>
       <div className="leftbar">
-        <Leftbar />
+        {page!==4 ? <Leftbar /> : <Filler/>}
       </div>
       <div className="rightbar">
-        <Rightbar />
+        {page!==3 ? <Rightbar />: <Filler/>}
       </div>
       <div className="main">
         {renderSwitch()}

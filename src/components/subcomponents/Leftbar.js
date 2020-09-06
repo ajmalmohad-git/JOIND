@@ -16,7 +16,6 @@ function Leftbar() {
     return (
         <div className="Leftbar">
             <div className="user">
-                <img  className="logo" src={require('./../../images/joind.png')} alt="JOIND" />
                 <Avatar className="avatar"/>
                 <p>@user_name</p>
             </div>

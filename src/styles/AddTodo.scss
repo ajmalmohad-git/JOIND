@@ -2,5 +2,12 @@
 @import 'utilities';
 
 .AddTodo{
-    @include element;
+    height:100%;
+    overflow: hidden;
+}
+@media (max-width:850px)
+{
+    .AddTodo{
+        height:76vh;
+    }
 }

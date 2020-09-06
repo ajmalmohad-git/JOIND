@@ -3,24 +3,19 @@
 
 .Leftbar {
     @include element;
-    min-height:540px;
     min-width:250px;
 
     .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height:35%;
-        min-height:180px;
         border-radius:$border-rad;
         background:rgba(39,149,139,0.55);
-        .logo {
-            height: 4vh;
-            min-height:20px;
-            margin-top:10%;
-        }
         .avatar
         {
             height:10vh;
-            min-height:50px;
-            min-width:50px;
             width: 10vh;
             object-fit: cover;
             margin: 25px auto 10px auto;
@@ -37,7 +32,6 @@
     { 
         @include element;
         height:20%;
-        min-height:110px;
         border-radius:$border-rad;
         text-align: left;
         padding:10px;
@@ -61,8 +55,7 @@
     {
         @include element;
         @include no-scrollbar;
-        height:36vh;
-        min-height:180px;
+        height:36%;
         padding:10px;
         padding-top:1vh;
         background: lighten($color: $acc-col1, $amount: 10);

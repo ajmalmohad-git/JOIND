@@ -41,6 +41,11 @@
     .main::-webkit-scrollbar {
         display: none;
     }
+
+    .Filler
+    {
+        @include element;
+    }
 }
 
 @media (max-width:1100px) {

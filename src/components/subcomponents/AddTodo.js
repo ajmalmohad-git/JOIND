@@ -1,10 +1,11 @@
 import React from 'react'
 import "../../styles/AddTodo.scss";
+import Rightbar from './Rightbar';
 
 function AddTodo() {
     return (
         <div className="AddTodo">
-            AddTodo
+            <Rightbar/>
         </div>
     )
 }
